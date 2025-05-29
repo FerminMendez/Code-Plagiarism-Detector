@@ -1,0 +1,14 @@
+This is the TEST CORPUS of the Detection of SOurce COde Re-use task (SOCO-2014) at FIRE 2014.
+
+
+* It is divided by programming language (C/C++ and JAVA) so you do not need any pre-process to identify the programming language of the source codes. 
+
+* Each programming language folder contains 6 folders (A1, A2, B1, B2, C1 and C2) that contains a specific scenario with monolingual re-use. 
+
+* There is not re-use between scenarios so you just need to look for re-used cases among the source code files inside each folder.
+
+* The name of the files consists of the name of the task which they belong plus an identifier. For example, file "B10021" belongs to scenario B1 and its identifier number is 0021. It could not exist re-use between source codes that belong to different scenarios. For example, you do not have to submit a re-used case between files "B10021" and "B20013". The first one belongs to scenario B1 but the second one belongs to B2.
+
+* Remember that it does NOT matter the order of each re-used source code pair you retrieve. For example, if A has been re-used from B, it will be valid to retrieve the pair A-B and the pair B-A.
+
+* The submission of the results will be an XML file for each programming language. The format of the XML file is described at SOCO web page.
