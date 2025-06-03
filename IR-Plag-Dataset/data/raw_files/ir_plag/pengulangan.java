@@ -1,14 +1,20 @@
-import java.util.Scanner;
+import java.util.*;
 
-public class pengulangan {
-
-   public static void main(String[] args) {
-        System.out.println("Miles\t\tKilometers");
-        System.out.println("-------------------------------");
-        int miles = 1;//inisialisasi while pertama kali
-        while (miles <= 10) {
-            System.out.println(miles + "\t\t" + miles * 1.609);
-            miles++;
-        }//looping dari 1 sampai 10
-   }
+class inputoutput{
+	static void hitHasil(int a)
+	{
+		for(;a<=10;a++)
+		{
+			System.out.println(a + "\t\t" + a * 1.609);
+		}
+	}
+	public static void main(String[] args) 
+	{
+		// print seusatu
+	System.out.print("Miles\t\tKilometers\n");
+	System.out.print("-------------------------------\n");
+	// pake pengulangan while
+		hitHasil(1);
+		
+	}
 }

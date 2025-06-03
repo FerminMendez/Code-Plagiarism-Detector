@@ -1,1 +1,1 @@
-{"source": "IR-Plag", "plagiarism_level": "2", "dataset": "IR-Plag", "files": ["T4.java", "looping.java"], "label": 1}
+{"source": "IR-Plag", "plagiarism_level": "6", "dataset": "IR-Plag", "files": ["T4.java", "looping.java"], "label": 1}
