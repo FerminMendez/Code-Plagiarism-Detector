@@ -12,13 +12,19 @@ import java.util.Scanner;
  * @author C166AB8FBBBE55174E16A67530426A8A 19011F43894F06E2BA0CA74061427469
  */
 public class Kasus2 {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        // Enter radius of the cylinder
-        System.out.print("Enter the radius and length of a cylinder: ");
-        double r = input.nextDouble();
-        double l = input.nextDouble();
-        System.out.println("The area is " + r*r*Math.PI);
-        System.out.println("The volume of the cylinder is " + r*r*Math.PI*l);
-    }
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		// Enter radius of the cylinder dddd
+		System.out.print("Enter the radius and length of a cylinder: ");
+		double radius = input.nextDouble();
+		double length = input.nextDouble();
+
+		double area = radius * radius * 3.14159;
+		double volume = area * length;
+
+		System.out.println("The area is " + area);
+		System.out.println("The volume of the cylinder is " + volume);
+	}
 }

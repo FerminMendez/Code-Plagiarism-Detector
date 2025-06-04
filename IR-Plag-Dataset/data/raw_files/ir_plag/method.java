@@ -1,35 +1,23 @@
-import java.util.*;
 
-class method{
-	//method reverse
-	static java.util.Scanner input = new java.util.Scanner(System.in);
-		public static void beautyReverse(int num) 
-	{
-		
-		for(;num >0;num/=100*10)
-			{
+import java.util.Scanner;
 
-				System.out.print(num % 10);
+public class method {
 
-		}
-		System.out.println();
-	}
-	static void reverse()
-	{
-		int n = input.nextInt();
-		beautyReverse(n);
-	}
-	
-	//prog utama
-	public static void main(String[] args) 
-	{
-			System.out.print("Enter an integer: ");
-			
-		
-		//pamggil method
-			reverse();
-	}
-	
-	
+    public static void main(String[] args) {
+         System.out.print("Enter an integer: ");
+        
+        java.util.Scanner input = new java.util.Scanner(System.in);
+        int    number =    input.nextInt();//input integer
+          reverse(number);//memanggil fungsi reverse
+    }
 
+    public static void reverse(int number)  {
+        while (number != 0) {//looping sampai angka habis
+             int   remainder = number % 10;//membagi bilangan tersebut dengan 0 sampai tidak ada hasil bagi
+            System.out.print(remainder);
+            number = number / 10;
+        }
+        
+        System.out.println();
+    }
 }

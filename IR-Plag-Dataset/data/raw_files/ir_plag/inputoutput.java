@@ -1,33 +1,20 @@
 import java.util.*;
 
 class inputoutput{
-	static double hitHeight(double kaki, double inc)
-	{
-		return kaki * 12 + inc;
-	}
-	static double hitBmi(double bobot, double height)
-	{
-		return bobot * 0.45359237 /
-		((height * 0.0254) * (height * 0.0254));
-	}
 	public static void main(String[] args) 
 	{
-		double kaki;
-		double bobot;
-		double bmi;
-		double inc;
-		double height;
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter weight in pounds: ");
 		
-		 bobot = input.nextDouble();
+		double bobot = input.nextDouble();
 		System.out.print("Enter feet: ");
-		 kaki = input.nextDouble();
+		double kaki = input.nextDouble();
 		
 		System.out.print("Enter inches: ");
-		 inc = input.nextDouble();
-		 height = hitHeight(kaki,inc);
-		 bmi = hitBmi(bobot,height);
+		double inc = input.nextDouble();
+		double height = kaki * 12 + inc;
+		double bmi = bobot * 0.45359237 /
+		((height * 0.0254) * (height * 0.0254));
 		
 		
 		// hasil

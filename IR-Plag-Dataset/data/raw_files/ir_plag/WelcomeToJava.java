@@ -9,17 +9,13 @@
  * @author C166AB8FBBBE55174E16A67530426A8A 19011F43894F06E2BA0CA74061427469
  */
 public class WelcomeToJava {
-    public static String test(int i) {
-        if(i>0) {
-            System.out.println("Welcome To Java");
-            return test(--i);
-        }
-        else
-            return "";
-    }
-    
     public static void main(String[] args) {
-        int i=5;
-        test(i);
+		{
+            System.out.println("Welcome To Java");
+			System.out.println("Welcome To Java");
+			System.out.println("Welcome To Java");
+			System.out.println("Welcome To Java");
+			System.out.println("Welcome To Java");
+        }
     }
 }

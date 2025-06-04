@@ -23,12 +23,12 @@ public class Kasus7 {
         }
     }
     
-    public static double sumMajorDiagonal(double[][] matrix, int n) {
-        if(n>=0) {
-            return matrix[n][n] + sumMajorDiagonal(matrix, --n);
+    public static void sumMajorDiagonal(double[][] matrix) {
+        double sum = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            sum += matrix[i][i];
         }
-        else
-            return 0;
+        System.out.println("Sum of the elements in the major diagonal is " + sum);
     }
     
     public static void main(String[] args) {
@@ -38,6 +38,6 @@ public class Kasus7 {
         double[][] matrix = new double[n][n];
         
         inputMatrix(matrix, n);
-        System.out.println("Sum of the elements in the major diagonal is " + sumMajorDiagonal(matrix, --n));
+        sumMajorDiagonal(matrix);
     }
 }
