@@ -67,3 +67,4 @@ Dado el dataset procesado el notebook tiene la opción de generar y elegir los f
 La sección de modelos tiene los modelos declarados inmediatamente se selecciona solo el modelo que se va a entrenar
 ya tiene una interfaz lista para solo seleccionar el modelo y directamente entrenarlo y evaluarlo.
 
+
