@@ -1,4 +1,4 @@
-# Detector de Plagio de Código 🧠💻
+# Detector de Plagio en Código Java 🧠💻
 ## Descripción del Proyecto
 Este proyecto implementa un sistema de detección de plagio en código fuente. El objetivo es identificar similitudes entre fragmentos de código utilizando técnicas de procesamiento de texto y aprendizaje automático. El sistema puede ser útil para entornos académicos o profesionales donde la originalidad del código es fundamental.
 
@@ -18,19 +18,12 @@ Model: Carpeta donde se guardan los modelos ejecutados
 Presentación: Power Point que contiene la presentación para este proyecto.
 
 ## Descripción del Dataset
-Se utiliza un conjunto de datos compuesto por fragmentos de código fuente etiquetados como plagiados o originales. Este dataset está diseñado para entrenar y evaluar modelos de detección de plagio y simula escenarios reales de duplicación con o sin modificaciones menores.
+Se utiliza un conjunto de datos compuesto por fragmentos de código fuente etiquetados en carpetas como plagiados, originales y no plagiados. Este dataset está diseñado para entrenar y evaluar modelos de detección de plagio y simula escenarios reales de duplicación con o sin modificaciones menores.
 
 Cada entrada del dataset contiene:
 
-file_name: Nombre del archivo fuente.
+* Java code: Fragmento de código en Java.
 
-code: Fragmento de código en distintos lenguajes (e.g., Python, Java, C++).
-
-author: Identificador del autor original.
-
-label: Etiqueta binaria que indica si el código es original (0) o plagiado (1).
-
-El 5% de los datos puede tener campos faltantes (como el autor) para reflejar la naturaleza incompleta de la información en casos reales.
 
 # Proceso del Proyecto
 ## Recolección y Preparación del Dataset
@@ -57,10 +50,10 @@ Se utilizó TF-IDF para representar los fragmentos de código como vectores num�
 ## Funciones para obtener los feautures para el modelo
 Dado el dataset procesado el notebook tiene la opción de generar y elegir los features para entrenar los modelos.
 
-1 - Cosine similarity plain text
-2- Cosine similarity tokenized string AST
-3 - Jaccard similarity plain text
-4- Jaccard similarity tokenized string AST
+1. Cosine similarity plain text
+2. Cosine similarity tokenized string AST
+3. Jaccard similarity plain text
+4. accard similarity tokenized string AST
 
 ## Declaración de los modelos
 
